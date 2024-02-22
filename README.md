@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://grow.empress.eco/uploads/default/original/2X/5/5dd1581b5b53bbaaf9d990c90253fb54ef153ac0.png" alt="Project Logo" height="75px">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" height="80px" alt="Project Logo" ">
+
   <h1 align="center">Empress Active Users</h1>
   <p align="center">
     A robust plugin offering real-time tracking of team activity, designed to empower project managers and team leads.
