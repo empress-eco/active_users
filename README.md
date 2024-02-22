@@ -1,148 +1,81 @@
-# Frappe Active Users
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/5/5dd1581b5b53bbaaf9d990c90253fb54ef153ac0.png" alt="Project Logo" height="75px">
+  <h1 align="center">Empress Active Users</h1>
+  <p align="center">
+    A robust plugin offering real-time tracking of team activity, designed to empower project managers and team leads.
+    <br />
+    <a href="https://grow.empress.eco/">Explore the Docs</a>
+    ·
+    <a href="https://github.com/empress-eco/active_users/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/active_users/issues">Request Feature</a>
+  </p>
+</div>
 
-A small plugin for Frappe that displays a list of current active users.
+## About The Project
 
-<p align="center">
-    <img src="https://github.com/kid1194/frappe-active-users/blob/main/images/image.png?raw=true" alt="Active Users"/>
-</p>
+### 📖 Overview
 
----
+Empress Active Users is an impactful plugin offering real-time tracking of your team's activity. Designed with project managers and team leads in mind, this plugin provides a list of currently active users, empowering you to better manage your resources and stay informed about your project's progress.
 
-### Table of Contents
-- [Requirements](#requirements)
-- [Setup](#setup)
-  - [Install](#install)
-  - [Update](#update)
-  - [Uninstall](#uninstall)
-- [Usage](#usage)
-- [Contributors](#contributors)
-- [Issues](#issues)
-- [License](#license)
+### 🌟 Key Features
 
----
+- Real-time list of active users
+- Adjustable refresh interval
+- Customizable visibility settings for different roles and users
 
-### Requirements
-- Frappe >= v13.0.0
+## Technical Stack and Setup Instructions
 
----
+### Prerequisites
 
-### Setup
+- A running instance of Empress v13.0.0 or higher
 
-⚠️ *Important* ⚠️
+### Installation
 
-*Do not forget to replace [sitename] with the name of your site in all commands.*
+Get started with Empress Active Users by following these simple steps:
 
-#### Install
-1. Go to bench directory
+```sh
+# Navigate to bench directory
+cd ~/Empress-bench
 
-```
-cd ~/frappe-bench
-```
+# Clone the plugin from Github (Required only once)
+bench get-app https://github.com/empress-eco/active_users.git
 
-2. Get plugin from Github
-
-*(Required only once)*
-
-```
-bench get-app https://github.com/kid1194/frappe-active-users
-```
-
-3. Build plugin
-
-*(Required only once)*
-
-```
+# Build the plugin (Required only once)
 bench build --app active_users
-```
 
-4. Install plugin on a specific site
-
-```
-bench --site [sitename] install-app active_users
-```
-
-5. Check the usage section below
-
-#### Update
-1. Go to app directory
+# Install the plugin on a specific site
+bench --site [your_site_name] install-app active_users
 
 ```
-cd ~/frappe-bench/apps/active_users
-```
+Remember to replace `[your_site_name]` with the name of your site in all commands.
 
-2. Get updates from Github
+## Usage
 
-```
-git pull
-```
+1. Navigate to **Active Users Settings**
+2. Check the **Is Enabled** box and set your desired **Refresh Interval**
+3. Select the **Roles** and **Users** for whom you want the plugin to be visible or hidden.
 
-3. Go to bench directory
+## Contribution Guidelines
 
-```
-cd ~/frappe-bench
-```
+We welcome and value your contributions! Here's how you can contribute:
 
-4. Build plugin
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
-```
-bench build --app active_users
-```
-
-5. Update a specific site
-
-```
-bench --site [sitename] migrate
-```
-
-6. Restart bench
-
-```
-bench restart
-```
-
-#### Uninstall
-1. Go to bench directory
-
-```
-cd ~/frappe-bench
-```
-
-2. Uninstall plugin from a specific site
-
-```
-bench --site [sitename] uninstall-app active_users
-```
-
-3. Remove plugin from bench
-
-```
-bench remove-app active_users
-```
-
-4. Restart bench
-
-```
-bench restart
-```
-
----
-
-### Usage
-1. Go to **Active Users Settings**
-2. Check the **Is Enabled** box and set the desired **Refresh Interval**
-3. Choose the **Roles** and **Users** that you want the plugin to be visible to or hidden from
-
----
-
-### Contributors
-- [Monolith Online](https://github.com/monolithon) (Testing & Debugging)
-
----
-
-### Issues
-If you find bug in the plugin, please create a [bug report](https://github.com/kid1194/frappe-active-users/issues/new?assignees=kid1194&labels=bug&template=bug_report.md&title=%5BBUG%5D) and let us know about it.
-
----
+## License and Acknowledgments
 
 ### License
-This repository has been released under the [MIT License](https://github.com/kid1194/frappe-active-users/blob/main/LICENSE).
+
+This project is licensed under the MIT License. Your contributions are also licensed under the MIT License.
+
+### Acknowledgments
+
+Special thanks to the Empress Community, the architects behind the essential tools that power this project. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
+
+We also wish to acknowledge [Monolith Online](https://github.com/monolithon) for their testing and debugging efforts.
+
+For any issues or queries, reach out to us via our [support](https://grow.empress.eco/) page.
